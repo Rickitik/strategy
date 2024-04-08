@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стратегия</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body>
+	@@include('blocks/header.html')
+    @@include('blocks/about.html')
+    @@include('blocks/working.html')
+    @@include('blocks/filosofy.html')
+    @@include('blocks/trust_us.html')
+    @@include('blocks/tips.html')
+    @@include('blocks/markets.html')
+    @@include('blocks/form.html')
+	<script src="./js/index.bundle.js"></script>
+    <script>
+        function validateForm(event) {
+          event.preventDefault();
+      
+          const form = event.target;
+          const formElements = Array.from(form.elements);
+          let isValid = true;
+      
+          formElements.forEach((element) => {
+            if (element.required && !element.value) {
+              isValid = false;
+              element.classList.add("error");
+            } else {
+              element.classList.remove("error");
+            }
+      
+            if (element.type === "email") {
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (element.value && !emailRegex.test(element.value)) {
+                isValid = false;
+                element.classList.add("error");
+              } else {
+                element.classList.remove("error");
+              }
+            }
+          });
+      
+          if (isValid) {
+            form.submit();
+          }
+        }
+      
+        const form = document.querySelector("form");
+        form.addEventListener("submit", validateForm);
+    </script>
+</body>
+
+</html>

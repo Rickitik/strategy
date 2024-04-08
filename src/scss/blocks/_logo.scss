@@ -1,0 +1,16 @@
+.logo {
+
+    @include mobile {
+        width: 190px;
+        height: 34px;
+        margin-bottom: 10px;
+    }
+}
+
+.logo {
+
+    // .logo__link
+
+    &__link {
+    }
+}

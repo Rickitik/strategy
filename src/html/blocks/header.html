@@ -1,0 +1,64 @@
+<header class="header" id="top">
+    <div class="header__scroll-to-top" id="top_btn">
+        <button id="scroll-to-top"></button>
+    </div>
+    <!--<div class="header__sticky">
+        <div class="container">
+            <div class="row">
+
+                <div class="logo">
+                    <a href="" class="logo__link">
+                        <img src="./../../img/logo_small.png" alt="Logo">
+                    </a>
+                </div>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#top" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon">
+                    </div>
+                </button>
+            </div>
+
+        </div>
+    </div>-->
+    <div class="container ">
+        <div class="header__wrapper">
+            <div class="parallax__wrapper" id="scene">
+                @@include('./header_parallax.html')
+            </div>
+            <div class="header__inner"> 
+                
+                <div class="header__row">
+                    <div class="logo">
+                        <a href="" class="logo__link">
+                            <img src="./../../img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#top" class="nav__link">О нас</a></li>
+                            <li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
+                            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="mobile-nav-btn">
+                        <div class="nav-icon">
+                        </div>
+                    </button>
+                </div>
+                <div class="header__row--swiper">
+                    @@include('./main-swiper.html')
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</header>
+@@include('mobile-nav.html')

@@ -1,0 +1,302 @@
+.markets {
+    overflow: hidden;
+
+    // .markets__inner
+
+    &__inner {
+        margin-top: 50px; 
+        position: relative;
+        height: 1680px;
+        width: 100%;
+
+        @include mobile {
+            height: clamp(1060px, 241vw, 1400px);
+        }
+    }
+
+    // .markets__lines
+
+    &__lines {
+        position: absolute;
+        top: 50px;
+        left: -        250px;
+        right: -29vw;
+        @include mobile {
+            display: none;
+        }
+    }
+    &__lines2 {
+        display: none;
+
+        @include mobile {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -28px;
+            right: -28px;
+        }
+    }
+
+    // .markets__span
+
+    &__span {
+        position: absolute;
+        top: 0;
+        left: -37px;
+        width: 974px;
+
+        @include mobile {
+            width: 100%;
+            left: 0;
+            top: 20px;
+        }
+
+    }
+
+    // .markets__boy
+
+    &__boy {
+        width: 550px;
+        height: 590px;
+        position: absolute;
+        top: 31px;
+        right: -20px;
+        @include mobile {
+            display: none;
+        }
+    }
+
+    // .markets__title
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        font-weight: 600;
+        font-size: 60px;
+        text-transform: uppercase;
+
+        color: #000;
+        text-shadow: 5px -3px 4px rgba(0, 0, 0, 0.2);
+
+        @include mobile {
+            top: clamp(250px, 80vw, 375px);
+            font-size: clamp(27px, 9vw, 37px);
+        }
+    }
+
+    // .markets__boxes
+
+    &__boxes {
+        width: 50%;
+        position: relative;
+        top: 57%;
+
+        @include mobile {
+            top: clamp(320px, 92vw, 455px);
+            width: 81%;
+        }
+    }
+
+    // .markets__big
+
+    &__big {
+        position: absolute;
+        top: 0;
+
+    }
+
+    // .markets__medium
+
+    &__medium {
+        position: absolute;
+        top: 252px;
+        left: 414px;
+        @include mobile {
+            top: clamp(100px, 26vw, 155px);
+            left: clamp(150px, 39vw, 223px);
+            width: 40%;
+        }       
+    }
+
+    // .markets__mini
+
+    &__mini {
+        position: absolute;
+        top: 362px;
+        left: 272px;
+
+        @include mobile {
+            width: 27%;
+            top: 240px;
+            top: clamp(140px, 41.2vw, 235px);
+            left: clamp(100px, 24.5vw, 140px);
+        }
+    }
+
+    // .markets__title1
+
+    &__title1 {
+        position: absolute;
+        top: 72%;
+        right: 0;
+        @include mobile {
+            top: clamp(500px, 136.2vw, 790px);
+        }
+    }
+
+    // .markets__underline1
+
+    &__underline1 {
+        position: absolute;
+        right: -300px;
+        top: 76%;
+
+        @include mobile {
+            right: -37px;
+            width: 100%;
+            top: clamp(560px, 148.2vw, 850px);
+            height: 17px;
+
+            img{
+                height: 100%;
+                margin-left: auto;
+            }
+        }
+    }
+
+    // .markets__desc1
+
+    &__desc1 {
+        position: absolute;
+        top: 78%;
+        right: 0;
+        max-width: 517px;
+
+        font-weight: 500;
+        font-size: 22px;
+        text-align: right;
+        color: #404040;
+
+        @include mobile {
+            font-size: 19px;
+            top: clamp(590px, 150.79vw, 890px);;
+        }
+    }
+
+    // .markets__title2
+
+    &__title2 {
+        position: absolute;
+        top: 88%;
+        left: 0;
+        text-shadow: 0 6px 4px rgba(0, 0, 0, 0.25) !important;
+
+        @include mobile {
+            top: clamp(660px, 164vw, 970px);
+        }
+    }
+
+    // .markets__underline2
+
+    &__underline2 {
+        position: absolute;
+        top: 93%;
+        left: -320px;
+
+        @include mobile {
+            top: clamp(730px, 178vw, 1030px);
+            height: 17px;
+            width: 100%;
+            left: -37px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    // .markets__desc2
+
+    &__desc2 {
+        position: absolute;
+        top: 95%;
+
+        max-width: 400px;
+
+        font-weight: 500;
+        font-size: 22px;
+        color: #404040;
+
+        @include mobile {
+            font-size: 18px;
+            top: clamp(750px, 182vw, 1050px);
+        }
+    }
+
+    // .markets__title3
+
+    &__title3 {
+        position: absolute;
+        top: 88%;
+        right: 0;
+
+        @include mobile {
+            top: clamp(830px, 197vw, 1140px);
+        }
+    }
+
+    // .markets__underline3
+
+    &__underline3 {
+        position: absolute;
+        top: 93%;
+        right: -300px;
+
+        @include mobile {
+            top: clamp(890px, 210vw, 1210px);
+            height: 16px;
+            right: -37px;
+            margin-left: auto;
+            width: 100%;
+
+            img {
+                height: 100%;
+                margin-left: auto;
+            }
+        }
+    }
+
+    // .markets__desc3
+
+    &__desc3 {
+        position: absolute;
+        top: 95%;
+        right: 0;
+        max-width: 520px;
+
+        font-weight: 500;
+        font-size: 22px;
+        text-align: right;
+        color: #404040;
+
+        @include mobile {
+            font-size: 18px;
+            top: clamp(910px, 213.7vw, 1240px);
+        }
+    }
+}
+
+
+.title {
+
+    &_info {
+        font-weight: 600;
+        font-size: 65px;
+        text-transform: uppercase;
+        text-shadow: 5px -3px 4px rgba(0, 0, 0, 0.2);
+        color: #3f51b5;
+        @include mobile {
+            font-size: 50px;
+        }
+    }
+}

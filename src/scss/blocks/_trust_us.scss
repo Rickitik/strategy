@@ -1,0 +1,86 @@
+.trust {
+    height: 422px;
+    margin-top: 40px;
+    background: linear-gradient(180deg, rgba(182, 189, 226, 0) 20.68%, rgba(64, 84, 177, 0.59) 50%, rgba(67, 108, 151, 0.74) 54.68%, rgba(71, 139, 118, 0.88) 60.68%, rgba(73, 156, 100, 0.88) 64.68%, rgba(76, 175, 80, 0.82) 69%, rgba(177, 220, 179, 0.6) 82.18%, rgba(255, 255, 255, 0) 94.62%);
+
+    
+    
+    // .trust__title
+
+    &__title {
+        font-weight: 700;
+        font-size: clamp(30px, 10vw, 50px);
+        text-transform: uppercase;
+        background: linear-gradient(235deg, #4ba65a 66%, #3f51b5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    // .trust__swiper
+
+    &__swiper {
+
+        // .trust__swiper_body
+
+        &_body {
+            padding-top: 77px;
+        }
+    }
+    &__name {
+        padding-top: 17px;
+    }
+
+    // .trust__img
+
+    &__img {
+        display: flex;
+        width: 191px;
+        height: 191px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 17px;
+
+        border-radius: 50%;
+        background-color: #fff;
+
+        @include mobile {
+            width: 145px;
+            height: 145px;
+            overflow: hidden;
+            img {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+    &__julvern {
+        background-color: #5B696E;
+    }
+    &__ok {
+        background-color: #00384B;
+    }
+    &__greenpack {
+        background-image: conic-gradient(from 91deg, rgba(123,160,40,1.00) 0%,rgba(133,168,38,1.00) 2%,rgba(125,163,31,1.00) 43%,rgba(101,134,27,1.00) 54%,rgba(112,143,32,1.00) 71%,rgba(110,143,24,1.00) 82%,rgba(119,151,37,1.00) 95%,rgba(120,153,31,1.00) 100%,rgba(117,149,32,1.00) 100%);background-position: center center;;
+    }
+    &__kvazar {
+        background-color: #646665;
+    }
+    &__rus {
+        background-image: linear-gradient(167deg, rgba(241,241,241,1.00) 0%,rgba(247,246,246,1.00) 100%);background-position: center center;
+    }
+    &__pfp {
+        background-color: #000;
+    }
+}
+
+.mySwiper3 {
+    .swiper-slide {
+        text-align: center;
+    }
+}
+.swiper-wrapper {
+}
+

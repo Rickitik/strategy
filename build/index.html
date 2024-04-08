@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Стратегия</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header" id="top">
+			<div class="header__scroll-to-top" id="top_btn">
+				<button id="scroll-to-top"></button>
+			</div>
+			<!--<div class="header__sticky">
+        <div class="container">
+            <div class="row">
+
+                <div class="logo">
+                    <a href="" class="logo__link">
+                        <picture>
+<source srcset="./img/logo_small.webp 1x, ./img/logo_small@2x.webp 2x" type="image/webp">
+<source srcset="./img/logo_small.png 1x, ./img/logo_small@2x.png 2x" type="image/png">
+<img src="./img/logo_small.png" alt="Logo">
+</picture>
+                    </a>
+                </div>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#top" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon">
+                    </div>
+                </button>
+            </div>
+
+        </div>
+    </div>-->
+			<div class="container ">
+				<div class="header__wrapper">
+					<div class="parallax__wrapper" id="scene">
+						<div data-depth="0.3">
+							<div class="scene_item_1">
+								<svg id="sc_1" width="40" height="40" fill="#478B76">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-green"></use>
+								</svg>
+								<svg id="sc_2" width="40" height="40" fill="#4CAF50">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-green"></use>
+								</svg>
+								<svg id="sc_3" width="40" height="40" fill="#4BA65A">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-green"></use>
+								</svg>
+							</div>
+						</div>
+						<div data-depth="0.5">
+							<div class="scene_item_1">
+								<svg id="sc_4" width="40" height="40" fill="#3F51B5">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-green"></use>
+								</svg>
+								<svg id="sc_5" width="40" height="40" fill="#E6E6E6">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-green"></use>
+								</svg>
+							</div>
+						</div>
+						<div data-depth="0.7">
+							<div class="scene_item_1">
+								<svg id="sc_6" width="40" height="40" fill="#E6E6E6">
+									<use href="./img/svgsprite/sprite.symbol.svg#triangle-green"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="header__inner">
+						<div class="header__row">
+							<div class="logo">
+								<a href="" class="logo__link">
+									<picture>
+										<source srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" type="image/png" />
+										<img src="./img/logo.png" alt="Logo" />
+									</picture>
+								</a>
+							</div>
+							<nav class="header__nav nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a href="#top" class="nav__link">О&#160;нас</a></li>
+									<li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
+									<li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+								</ul>
+							</nav>
+							<button class="mobile-nav-btn">
+								<div class="nav-icon"></div>
+							</button>
+						</div>
+						<div class="header__row--swiper">
+							<!-- Slider main container -->
+							<div class="swiper" id="swiper1">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<div class="card">
+											<div class="card__content">
+												<h2 class="card__title">
+													Ваш план&#160;&#8212; здесь
+												</h2>
+												<div class="card__desc">
+													Один способ достижения любой цели
+												</div>
+											</div>
+											<div class="card__img">
+												<picture>
+													<source srcset="./img/main_slider/slide1.webp 1x, ./img/main_slider/slide1@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/main_slider/slide1.png 1x, ./img/main_slider/slide1@2x.png 2x" type="image/png" />
+													<img src="./img/main_slider/slide1.png" alt="slide1_img" />
+												</picture>
+											</div>
+											<button class="card__btn">выбрать стратегию</button>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card">
+											<div class="card__content">
+												<h2 class="card__title">
+													Ответим на&#160;все вопросы
+												</h2>
+												<div class="card__desc">
+													На&#160;встрече или по&#160;телефону, оперативно и&#160;аргументированно
+												</div>
+											</div>
+											<div class="card__img">
+												<picture>
+													<source srcset="./img/main_slider/slide2.webp 1x, ./img/main_slider/slide2@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/main_slider/slide2.png 1x, ./img/main_slider/slide2@2x.png 2x" type="image/png" />
+													<img src="./img/main_slider/slide2.png" alt="slide2_img" />
+												</picture>
+											</div>
+											<button class="card__btn">выбрать стратегию</button>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card">
+											<div class="card__content">
+												<h2 class="card__title">
+													защитим&#160;ваши интересы
+												</h2>
+												<div class="card__desc">
+													Минимизируем риски и&#160;сопроводим сложные сделки
+												</div>
+											</div>
+											<div class="card__img">
+												<picture>
+													<source srcset="./img/main_slider/slide3.webp 1x, ./img/main_slider/slide3@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/main_slider/slide3.png 1x, ./img/main_slider/slide3@2x.png 2x" type="image/png" />
+													<img src="./img/main_slider/slide3.png" alt="slide3_img" />
+												</picture>
+											</div>
+											<button class="card__btn">выбрать стратегию</button>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card">
+											<div class="card__content">
+												<h2 class="card__title card__slide4">
+													Окажем профессиональную поддержку
+												</h2>
+												<div class="card__desc">
+													Решим задачи разной сложности и&#160;любого маштаба
+												</div>
+											</div>
+											<div class="card__img">
+												<picture>
+													<source srcset="./img/main_slider/slide4.webp 1x, ./img/main_slider/slide4@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/main_slider/slide4.png 1x, ./img/main_slider/slide4@2x.png 2x" type="image/png" />
+													<img src="./img/main_slider/slide4.png" alt="slide4_img" />
+												</picture>
+											</div>
+											<button class="card__btn">выбрать стратегию</button>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="card">
+											<div class="card__content">
+												<h2 class="card__title">
+													будем держать в&#160;курсе
+												</h2>
+												<div class="card__desc">
+													Новых законов, правил и&#160;регламентов контролирующих органов
+												</div>
+											</div>
+											<div class="card__img">
+												<picture>
+													<source srcset="./img/main_slider/slide5.webp 1x, ./img/main_slider/slide5@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/main_slider/slide5.png 1x, ./img/main_slider/slide5@2x.png 2x" type="image/png" />
+													<img src="./img/main_slider/slide5.png" alt="slide5_img" />
+												</picture>
+											</div>
+											<button class="card__btn">выбрать стратегию</button>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="#top" class="mobile-nav__list-item">О&#160;нас</a></li>
+				<li><a href="#service" class="mobile-nav__list-item">Услуги</a></li>
+				<li><a href="#contacts" class="mobile-nav__list-item">Контакты</a></li>
+			</ul>
+		</div>
+
+		<section class="about">
+			<div class="about__wrapper">
+				<div class="parallax__wrapper" id="scene1"></div>
+				<div class="about__inner">
+					<picture>
+						<source srcset="./img/about/bg.webp 1x, ./img/about/bg@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/about/bg.png 1x, ./img/about/bg@2x.png 2x" type="image/png" />
+						<img class="about__bg" src="./img/about/bg.png" alt="bg" />
+					</picture>
+					<div class="about__logo-box">
+						<div class="about__logo-wrapper">
+							<picture>
+								<source srcset="./img/about/1.webp 1x, ./img/about/1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/about/1.png 1x, ./img/about/1@2x.png 2x" type="image/png" />
+								<img class="triangle tr-1" src="./img/about/1.png" alt="" />
+							</picture>
+							<picture>
+								<source srcset="./img/about/2.webp 1x, ./img/about/2@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/about/2.png 1x, ./img/about/2@2x.png 2x" type="image/png" />
+								<img class="triangle tr-2" src="./img/about/2.png" alt="" />
+							</picture>
+							<picture>
+								<source srcset="./img/about/3.webp 1x, ./img/about/3@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/about/3.png 1x, ./img/about/3@2x.png 2x" type="image/png" />
+								<img class="triangle tr-3" src="./img/about/3.png" alt="" />
+							</picture>
+						</div>
+					</div>
+					<div class="about__desc">
+						<div class="about__title">о&#160;компании</div>
+						<p class="about__text">
+							Стратегия&#160;&#8212; команда профессионалов, которая представляет комплексные услуги в&#160;области консалтинга, структурирования бизнеса и&#160;его
+							сопровождения.
+						</p>
+					</div>
+					<div class="about__statistic statistic">
+						<div class="statistic__row">
+							<h3 class="statistic__title fadeInRight wow">90%</h3>
+							<span class="statistic__desc">клиентов работают с&#160;нами на&#160;постоянной основе</span>
+						</div>
+						<div class="statistic__row">
+							<h3 class="statistic__title fadeInRight wow">>15</h3>
+							<span class="statistic__desc">лет опыта</span>
+						</div>
+						<div class="statistic__row">
+							<h3 class="statistic__title fadeInRight wow">>30&#160;000</h3>
+							<span class="statistic__desc">сданных отчётов в&#160;госорганы без претензий</span>
+						</div>
+						<div class="statistic__row">
+							<h3 class="statistic__title fadeInRight wow ">>550&#160;000</h3>
+							<span class="statistic__desc">составленных кадровых документов</span>
+						</div>
+						<div class="statistic__row">
+							<h3 class="statistic__title fadeInRight wow">>300&#160;000&#160;000</h3>
+							<span class="statistic__desc">сэкономленных рублей на&#160;возможных штрафах за&#160;предыдущий год</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="working" id="service">
+			<div class="container">
+				<div class="working__wrapper">
+					<div class="working__inner">
+						<div class="working__title">
+							<h2>
+								работаем 24/7,<br />
+								чтобы вы&#160;спали спокойно
+							</h2>
+							<p class="working__desc">
+								Выбирайте правильную стратегию, чтобы не&#160;попасть под влияние чужой тактики
+							</p>
+						</div>
+						<div class="working__swipper_body">
+							<div thumbsSlider="" class="swiper mySwiper" id="mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><span>БУХГАЛТЕРИЯ</span></div>
+									<div class="swiper-slide"><span>НАЛОГИ</span></div>
+									<div class="swiper-slide"><span>КАДРЫ</span></div>
+									<div class="swiper-slide"><span>ЮРИСТЫ</span></div>
+									<div class="swiper-slide"><span>ПОЛИГРАФ</span></div>
+									<div class="swiper-slide"><span>ПРОВЕРКА КОНТРАГЕНТОВ</span></div>
+								</div>
+							</div>
+							<div class="swiper mySwiper2" id="mySwiper2">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="working__desc">
+											<h3>Не&#160;оставим один на&#160;один</h3>
+											<ul class="working__list">
+												<li class="working__item">Выстроим рабочий процесс</li>
+												<li class="working__item">Разработаем учётную политику</li>
+												<li class="working__item">Проконтролируем бухгалтерские и&#160;налоговые регистры</li>
+												<li class="working__item">Проведём учёт в&#160;&#171;1С: Бухгалтерия&#187;</li>
+												<li class="working__item">Подготовим и&#160;сдадим отчётную документацию</li>
+												<li class="working__item">Сверим данные с&#160;контролирующими органами</li>
+											</ul>
+										</div>
+										<div class="working__img">
+											<div class="working__span">БУХГАЛТЕРИЯ</div>
+											<picture>
+												<source srcset="./img/working/slide1.webp 1x, ./img/working/slide1@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/working/slide1.png 1x, ./img/working/slide1@2x.png 2x" type="image/png" />
+												<img src="./img/working/slide1.png" alt="slide1" />
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="working__desc">
+											<h3>Найдём правильное решение</h3>
+											<ul class="working__list">
+												<li class="working__item">Оптимизируем налогообложение</li>
+												<li class="working__item">Осуществим налоговое планирование</li>
+												<li class="working__item">Проконсультируем по&#160;вопросам налогового законодательства</li>
+												<li class="working__item">Составим ответы на&#160;запросы контролирующих органов</li>
+												<li class="working__item">Проведём независимую проверку отчётной документации</li>
+												<li class="working__item">Представим интересы клиентов перед налоговыми органами</li>
+												<li class="working__item">Изучим акты налоговых проверок</li>
+											</ul>
+										</div>
+										<div class="working__img">
+											<div class="working__span">НАЛОГИ</div>
+											<picture>
+												<source srcset="./img/working/slide2.webp 1x, ./img/working/slide2@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/working/slide2.png 1x, ./img/working/slide2@2x.png 2x" type="image/png" />
+												<img src="./img/working/slide2.png" alt="slide2" />
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="working__desc">
+											<h3>Наведём рабочий порядок</h3>
+											<ul class="working__list">
+												<li class="working__item">Осуществим ведение кадрового делопроизводства</li>
+												<li class="working__item">Автоматизируем кадровый документооборот</li>
+												<li class="working__item">Сдадим отчётности и&#160;подготовим статистические данные</li>
+												<li class="working__item">Проведём миграционный и&#160;воинский учёты</li>
+												<li class="working__item">Проконсультируем по&#160;трудовому законодательству</li>
+											</ul>
+										</div>
+										<div class="working__img">
+											<div class="working__span">КАДРЫ</div>
+											<picture>
+												<source srcset="./img/working/slide3.webp 1x, ./img/working/slide3@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/working/slide3.png 1x, ./img/working/slide3@2x.png 2x" type="image/png" />
+												<img src="./img/working/slide3.png" alt="slide3" />
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="working__desc">
+											<h3>Не&#160;оставим один на&#160;один</h3>
+											<ul class="working__list">
+												<li class="working__item">Выстроим рабочий процесс</li>
+												<li class="working__item">Разработаем учётную политику</li>
+												<li class="working__item">Проконтролируем бухгалтерские и&#160;налоговые регистры</li>
+												<li class="working__item">Проведём учёт в&#160;&#171;1С: Бухгалтерия&#187;</li>
+												<li class="working__item">Подготовим и&#160;сдадим отчётную документацию</li>
+												<li class="working__item">Сверим данные с&#160;контролирующими органами</li>
+											</ul>
+										</div>
+										<div class="working__img">
+											<div class="working__span">ЮРИСТЫ</div>
+											<picture>
+												<source srcset="./img/working/slide4.webp 1x, ./img/working/slide4@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/working/slide4.png 1x, ./img/working/slide4@2x.png 2x" type="image/png" />
+												<img src="./img/working/slide4.png" alt="slide4" />
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="working__desc">
+											<h3>Не&#160;оставим один на&#160;один</h3>
+											<ul class="working__list">
+												<li class="working__item">Выстроим рабочий процесс</li>
+												<li class="working__item">Разработаем учётную политику</li>
+												<li class="working__item">Проконтролируем бухгалтерские и&#160;налоговые регистры</li>
+												<li class="working__item">Проведём учёт в&#160;&#171;1С: Бухгалтерия&#187;</li>
+												<li class="working__item">Подготовим и&#160;сдадим отчётную документацию</li>
+												<li class="working__item">Сверим данные с&#160;контролирующими органами</li>
+											</ul>
+										</div>
+										<div class="working__img">
+											<div class="working__span">ПОЛИГРАФ</div>
+											<picture>
+												<source srcset="./img/working/slide5.webp 1x, ./img/working/slide5@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/working/slide5.png 1x, ./img/working/slide5@2x.png 2x" type="image/png" />
+												<img src="./img/working/slide5.png" alt="slide5" />
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="working__desc">
+											<h3>Не&#160;оставим один на&#160;один</h3>
+											<ul class="working__list">
+												<li class="working__item">Выстроим рабочий процесс</li>
+												<li class="working__item">Разработаем учётную политику</li>
+												<li class="working__item">Проконтролируем бухгалтерские и&#160;налоговые регистры</li>
+												<li class="working__item">Проведём учёт в&#160;&#171;1С: Бухгалтерия&#187;</li>
+												<li class="working__item">Подготовим и&#160;сдадим отчётную документацию</li>
+												<li class="working__item">Сверим данные с&#160;контролирующими органами</li>
+											</ul>
+										</div>
+										<div class="working__img">
+											<div class="working__span">ПРОВЕРКА КОНТРАГЕНТОВ</div>
+											<picture>
+												<source srcset="./img/working/slide6.webp 1x, ./img/working/slide6@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/working/slide6.png 1x, ./img/working/slide6@2x.png 2x" type="image/png" />
+												<img src="./img/working/slide6.png" alt="slide6" />
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="philosophy">
+			<div class="container">
+				<div class="philosophy__inner">
+					<div class="philosophy__info">
+						<div class="philosophy__title fadeInDown wow">наша философия</div>
+						<div class="philosophy__lines upper fadeInLeft wow">
+							<div class="philosophy__line ">
+								<picture>
+									<source srcset="./img/phylosophy/line.webp 1x, ./img/phylosophy/line@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/line.png 1x, ./img/phylosophy/line@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/line.png" alt="line" />
+								</picture>
+							</div>
+							<div class="philosophy__dot">
+								<picture>
+									<source srcset="./img/phylosophy/dot.webp 1x, ./img/phylosophy/dot@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/dot.png 1x, ./img/phylosophy/dot@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/dot.png" alt="dot" />
+								</picture>
+							</div>
+							<div class="philosophy__line">
+								<picture>
+									<source srcset="./img/phylosophy/line.webp 1x, ./img/phylosophy/line@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/line.png 1x, ./img/phylosophy/line@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/line.png" alt="line" />
+								</picture>
+							</div>
+						</div>
+						<div class="philosophy__text">
+							Каждый бизнес уникален и&#160;требует индивидуального подхода Мы&#160;убеждены, что только тесное сотрудничество с&#160;клиентом и&#160;глубокое понимание
+							его бизнеса позволяют достичь наилучших результатов
+						</div>
+						<div class="philosophy__lines lower fadeInRight wow">
+							<div class="philosophy__line">
+								<picture>
+									<source srcset="./img/phylosophy/line.webp 1x, ./img/phylosophy/line@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/line.png 1x, ./img/phylosophy/line@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/line.png" alt="line" />
+								</picture>
+							</div>
+							<div class="philosophy__dot">
+								<picture>
+									<source srcset="./img/phylosophy/dot.webp 1x, ./img/phylosophy/dot@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/dot.png 1x, ./img/phylosophy/dot@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/dot.png" alt="dot" />
+								</picture>
+							</div>
+							<div class="philosophy__line">
+								<picture>
+									<source srcset="./img/phylosophy/line.webp 1x, ./img/phylosophy/line@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/line.png 1x, ./img/phylosophy/line@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/line.png" alt="line" />
+								</picture>
+							</div>
+						</div>
+						<div class="philosophy__sign">
+							<div class="philosophy__post">Генеральный директор</div>
+							<div class="philosophy__name">
+								<picture>
+									<source srcset="./img/phylosophy/name.webp 1x, ./img/phylosophy/name@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/phylosophy/name.png 1x, ./img/phylosophy/name@2x.png 2x" type="image/png" />
+									<img src="./img/phylosophy/name.png" alt="name" />
+								</picture>
+							</div>
+						</div>
+					</div>
+
+					<div class="philosophy__photo">
+						<picture>
+							<source srcset="./img/phylosophy/woman.webp 1x, ./img/phylosophy/woman@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/phylosophy/woman.png 1x, ./img/phylosophy/woman@2x.png 2x" type="image/png" />
+							<img src="./img/phylosophy/woman.png" alt="woman" />
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="trust">
+			<div class="container-right">
+				<h2 class="trust__title fadeInLeft wow">нам доверяют:</h2>
+				<div class="trust__swiper_body fadeInRight wow">
+					<div class="swiper mySwiper3" id="mySwiper3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="trust__img">
+									<picture>
+										<source srcset="./img/trust/sl1.webp 1x, ./img/trust/sl1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl1.png 1x, ./img/trust/sl1@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl1.png" alt="Neoniks" />
+									</picture>
+								</div>
+								<span class="trust__name">Neoniks</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img">
+									<picture>
+										<source srcset="./img/trust/sl2.webp 1x, ./img/trust/sl2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl2.png 1x, ./img/trust/sl2@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl2.png" alt="Эра упаковки" />
+									</picture>
+								</div>
+								<span class="trust__name">Эра упаковки</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img">
+									<picture>
+										<source srcset="./img/trust/sl3.webp 1x, ./img/trust/sl3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl3.png 1x, ./img/trust/sl3@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl3.png" alt="Профторг" />
+									</picture>
+								</div>
+								<span class="trust__name">Профторг</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img">
+									<picture>
+										<source srcset="./img/trust/sl4.webp 1x, ./img/trust/sl4@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl4.png 1x, ./img/trust/sl4@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl4.png" alt="TMC" />
+									</picture>
+								</div>
+								<span class="trust__name">TMC</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img trust__julvern">
+									<picture>
+										<source srcset="./img/trust/sl5.webp 1x, ./img/trust/sl5@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl5.png 1x, ./img/trust/sl5@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl5.png" alt="Жюль Верн" />
+									</picture>
+								</div>
+								<span class="trust__name">Жюль Верн</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img trust__ok">
+									<picture>
+										<source srcset="./img/trust/sl6.webp 1x, ./img/trust/sl6@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl6.png 1x, ./img/trust/sl6@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl6.png" alt="ОК" />
+									</picture>
+								</div>
+								<span class="trust__name">ОК</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img trust__greenpack">
+									<picture>
+										<source srcset="./img/trust/sl7.webp 1x, ./img/trust/sl7@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl7.png 1x, ./img/trust/sl7@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl7.png" alt="ОК" />
+									</picture>
+								</div>
+								<span class="trust__name">GreenPark</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img">
+									<picture>
+										<source srcset="./img/trust/sl8.webp 1x, ./img/trust/sl8@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl8.png 1x, ./img/trust/sl8@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl8.png" alt="MMC" />
+									</picture>
+								</div>
+								<span class="trust__name">MMC</span>
+							</div>
+							<div class="swiper-slide ">
+								<div class="trust__img trust__kvazar">
+									<picture>
+										<source srcset="./img/trust/sl9.webp 1x, ./img/trust/sl9@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl9.png 1x, ./img/trust/sl9@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl9.png" alt="КВАЗАР " />
+									</picture>
+								</div>
+								<span class="trust__name">КВАЗАР</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img">
+									<picture>
+										<source srcset="./img/trust/sl10.webp 1x, ./img/trust/sl10@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl10.png 1x, ./img/trust/sl10@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl10.png" alt="Гидротехснаб" />
+									</picture>
+								</div>
+								<span class="trust__name">Гидротехснаб</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img trust__rus">
+									<picture>
+										<source srcset="./img/trust/sl11.webp 1x, ./img/trust/sl11@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl11.png 1x, ./img/trust/sl11@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl11.png" alt="Русс Групп" />
+									</picture>
+								</div>
+								<span class="trust__name">Русс Групп</span>
+							</div>
+							<div class="swiper-slide">
+								<div class="trust__img trust__pfp">
+									<picture>
+										<source srcset="./img/trust/sl12.webp 1x, ./img/trust/sl12@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/trust/sl12.png 1x, ./img/trust/sl12@2x.png 2x" type="image/png" />
+										<img src="./img/trust/sl12.png" alt="ПФП сервис" />
+									</picture>
+								</div>
+								<span class="trust__name">ПФП сервис</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="tips">
+			<div class="container">
+				<div class="tips__desktop">
+					<div class="tips__tip1 tip1 fadeInLeft wow">
+						<div class="tip1__img">
+							<picture>
+								<source srcset="./img/tips/tip1.webp 1x, ./img/tips/tip1@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/tips/tip1.jpg 1x, ./img/tips/tip1@2x.jpg 2x" type="image/jpeg" />
+								<img src="./img/tips/tip1.jpg" alt="tip1" />
+							</picture>
+						</div>
+						<div class="tip1__info">
+							<div class="tip1__title">Избавим от&#160;рутинных задач</div>
+							<div class="tip1__desc">
+								<p class="tip1__desc_title">По&#160;статистике:</p>
+								<div class="tip1__digits">
+									<div class="tip1__digit_accent">43%</div>
+									<div class="tip1__digit_text">составляют зарплатные налоги</div>
+								</div>
+								<div class="tip1__digits">
+									<div class="tip1__digit_accent">1-&#160;2&#160;мес.</div>
+									<div class="tip1__digit_text">уходит на&#160;адаптацию штатного специалиста</div>
+								</div>
+								<p>Передав кадровый учёт Стратегии, вы&#160;сможете освободить время для выполнения профильных функций</p>
+							</div>
+						</div>
+					</div>
+					<div class="tips__tip2 tip2 fadeInRight wow">
+						<div class="tip2__img">
+							<picture>
+								<source srcset="./img/tips/tip2.webp 1x, ./img/tips/tip2@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/tips/tip2.jpg 1x, ./img/tips/tip2@2x.jpg 2x" type="image/jpeg" />
+								<img src="./img/tips/tip2.jpg" alt="tip2" />
+							</picture>
+						</div>
+						<div class="tip2__info">
+							<div class="tip2__title">Заберём на&#160;аутсорсинговое обслуживание</div>
+							<ul class="tip2__desc">
+								<li class="tip2__item">Справимся без найма и&#160;расширения штата</li>
+								<li class="tip2__item">Снизим нагрузки на&#160;кадровую службу и&#160;бухгалтерский учёт</li>
+								<li class="tip2__item">Минимизируем риски и&#160;делегируем ответственность</li>
+								<li class="tip2__item">Оптимизируем финансовые показатели</li>
+								<li class="tip2__item">Закроем отчётный период корректно</li>
+								<li class="tip2__item">Снизим налоги легально и&#160;безопасно</li>
+								<li class="tip2__item">Защитим от&#160;рисков при заключении договоров</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tips__tip3 tip3 fadeInRight wow">
+						<div class="tip3__img">
+							<picture>
+								<source srcset="./img/tips/tip3.webp 1x, ./img/tips/tip3@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/tips/tip3.jpg 1x, ./img/tips/tip3@2x.jpg 2x" type="image/jpeg" />
+								<img src="./img/tips/tip3.jpg" alt="tip3" />
+							</picture>
+						</div>
+						<div class="tip3__info">
+							<div class="tip3__title">Оптимизируем воинский учёт и&#160;миграционные процедуры</div>
+							<ul class="tip3__desc">
+								<li class="tip3__item">Постановка иностранных граждан на&#160;учёт</li>
+								<li class="tip3__item">Ведение воинского учёта</li>
+								<li class="tip3__item">Взаимодействие с&#160;военкоматами и&#160;органами местного самоуправления</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tips__mobile tips__swiper swiper" id="swiper5">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="tips__tip1 tip1">
+								<div class="tip1__img">
+									<picture>
+										<source srcset="./img/tips/tip1.webp 1x, ./img/tips/tip1@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/tips/tip1.jpg 1x, ./img/tips/tip1@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/tips/tip1.jpg" alt="tip1" />
+									</picture>
+								</div>
+								<div class="tip1__info">
+									<div class="tip1__title">Избавим от&#160;рутинных задач</div>
+									<div class="tip1__desc">
+										<p class="tip1__desc_title">По&#160;статистике:</p>
+										<div class="tip1__digits">
+											<div class="tip1__digit_accent">43%</div>
+											<div class="tip1__digit_text">составляют зарплатные налоги</div>
+										</div>
+										<div class="tip1__digits">
+											<div class="tip1__digit_accent">1-&#160;2&#160;мес.</div>
+											<div class="tip1__digit_text">уходит на&#160;адаптацию штатного специалиста</div>
+										</div>
+										<p>Передав кадровый учёт Стратегии, вы&#160;сможете освободить время для выполнения профильных функций</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tips__tip2 tip2 ">
+								<div class="tip2__img">
+									<picture>
+										<source srcset="./img/tips/tip2.webp 1x, ./img/tips/tip2@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/tips/tip2.jpg 1x, ./img/tips/tip2@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/tips/tip2.jpg" alt="tip2" />
+									</picture>
+								</div>
+								<div class="tip2__info">
+									<div class="tip2__title">Заберём на&#160;аутсорсинговое обслуживание</div>
+									<ul class="tip2__desc">
+										<li class="tip2__item">Справимся без найма и&#160;расширения штата</li>
+										<li class="tip2__item">Снизим нагрузки на&#160;кадровую службу и&#160;бухгалтерский учёт</li>
+										<li class="tip2__item">Минимизируем риски и&#160;делегируем ответственность</li>
+										<li class="tip2__item">Оптимизируем финансовые показатели</li>
+										<li class="tip2__item">Закроем отчётный период корректно</li>
+										<li class="tip2__item">Снизим налоги легально и&#160;безопасно</li>
+										<li class="tip2__item">Защитим от&#160;рисков при заключении договоров</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="tips__tip3 tip3 fadeInRight wow">
+								<div class="tip3__img">
+									<picture>
+										<source srcset="./img/tips/tip3.webp 1x, ./img/tips/tip3@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/tips/tip3.jpg 1x, ./img/tips/tip3@2x.jpg 2x" type="image/jpeg" />
+										<img src="./img/tips/tip3.jpg" alt="tip3" />
+									</picture>
+								</div>
+								<div class="tip3__info">
+									<div class="tip3__title">Оптимизируем воинский учёт и&#160;миграционные процедуры</div>
+									<ul class="tip3__desc">
+										<li class="tip3__item">Постановка иностранных граждан на&#160;учёт</li>
+										<li class="tip3__item">Ведение воинского учёта</li>
+										<li class="tip3__item">Взаимодействие с&#160;военкоматами и&#160;органами местного самоуправления</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section class="markets">
+			<div class="container">
+				<div class="markets__inner">
+					<div class="markets__lines">
+						<picture>
+							<source srcset="./img/markets/lines.webp 1x, ./img/markets/lines@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/lines.png 1x, ./img/markets/lines@2x.png 2x" type="image/png" />
+							<img src="./img/markets/lines.png" alt="lines" />
+						</picture>
+					</div>
+					<div class="markets__lines2">
+						<picture>
+							<source srcset="./img/markets/lines_2.webp 1x, ./img/markets/lines_2@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/lines_2.png 1x, ./img/markets/lines_2@2x.png 2x" type="image/png" />
+							<img src="./img/markets/lines_2.png" alt="lines" />
+						</picture>
+					</div>
+					<div class="markets__span">
+						<picture>
+							<source srcset="./img/markets/span.webp 1x, ./img/markets/span@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/span.png 1x, ./img/markets/span@2x.png 2x" type="image/png" />
+							<img src="./img/markets/span.png" alt="trust us" />
+						</picture>
+					</div>
+					<div class="markets__boy">
+						<picture>
+							<source srcset="./img/markets/boy.webp 1x, ./img/markets/boy@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/boy.png 1x, ./img/markets/boy@2x.png 2x" type="image/png" />
+							<img src="./img/markets/boy.png" alt="boy" />
+						</picture>
+					</div>
+					<div class="markets__title">
+						<h2>маркетплейсы</h2>
+					</div>
+					<div class="markets__boxes">
+						<div class="markets__big fadeInDown wow" data-wow-delay="0.1s">
+							<picture>
+								<source srcset="./img/markets/cube_big.webp 1x, ./img/markets/cube_big@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/markets/cube_big.png 1x, ./img/markets/cube_big@2x.png 2x" type="image/png" />
+								<img src="./img/markets/cube_big.png" alt="big" />
+							</picture>
+						</div>
+						<div class="markets__medium fadeInDown wow" data-wow-delay="0.4s">
+							<picture>
+								<source srcset="./img/markets/cube_mid.webp 1x, ./img/markets/cube_mid@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/markets/cube_mid.png 1x, ./img/markets/cube_mid@2x.png 2x" type="image/png" />
+								<img src="./img/markets/cube_mid.png" alt="medium" />
+							</picture>
+						</div>
+						<div class="markets__mini fadeInDown wow" data-wow-delay="0.7s">
+							<picture>
+								<source srcset="./img/markets/cube_min.webp 1x, ./img/markets/cube_min@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/markets/cube_min.png 1x, ./img/markets/cube_min@2x.png 2x" type="image/png" />
+								<img src="./img/markets/cube_min.png" alt="mini" />
+							</picture>
+						</div>
+					</div>
+
+					<div class="markets__title1 title_info fadeInRight wow">Учёт</div>
+					<div class="markets__underline1">
+						<picture>
+							<source srcset="./img/markets/uchet.webp 1x, ./img/markets/uchet@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/uchet.png 1x, ./img/markets/uchet@2x.png 2x" type="image/png" />
+							<img src="./img/markets/uchet.png" alt="uchet" />
+						</picture>
+					</div>
+					<div class="markets__desc1">
+						Отразим поступления, перемещения и&#160;списания&#160;товаров,&#160;отследим остатки на&#160;складах
+					</div>
+
+					<div class="markets__title2 title_info fadeInLeft wow">ЭДО</div>
+					<div class="markets__underline2">
+						<picture>
+							<source srcset="./img/markets/edo.webp 1x, ./img/markets/edo@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/edo.png 1x, ./img/markets/edo@2x.png 2x" type="image/png" />
+							<img src="./img/markets/edo.png" alt="edo" />
+						</picture>
+					</div>
+					<div class="markets__desc2">
+						Подготовим отчёты агентов, оформим УПД по&#160;требованиям маркетплейсов
+					</div>
+
+					<div class="markets__title3 title_info fadeInRight wow">выручка</div>
+					<div class="markets__underline3">
+						<picture>
+							<source srcset="./img/markets/viruchka.webp 1x, ./img/markets/viruchka@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/markets/viruchka.png 1x, ./img/markets/viruchka@2x.png 2x" type="image/png" />
+							<img src="./img/markets/viruchka.png" alt="viruchka" />
+						</picture>
+					</div>
+					<div class="markets__desc3">
+						Проконтролируем поступления денег&#160;от&#160;продаж на&#160;маркетплейсах с&#160;учётом комиссии
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="contacts">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__content">
+						<div class="footer__container">
+							<div class="footer__title">Дела клиентов <span class="footer__devider">&#8212;</span> наш приоритет</div>
+							<form action="#" class="footer__form form">
+								<label class="form__label" for="name">Как к&#160;Вам обращаться?</label>
+								<input class="form__input" id="name" type="text" placeholder="Имя" required />
+								<label class="form__label" for="company">Название компании</label>
+								<input class="form__input" id="company" type="text" placeholder="Зарегистрированное" />
+								<label class="form__label" for="service">Услуга</label>
+								<select class="form__input" id="service" required>
+									<option value="option1">БУХГАЛТЕРИЯ</option>
+									<option value="option1">НАЛОГИ</option>
+									<option value="option1">КАДРЫ</option>
+									<option value="option1">ЮРИСТЫ</option>
+									<option value="option1">ПОЛИГРАФ</option>
+									<option value="option2">ПРОВЕРКА КОНТРАГЕНТОВ</option>
+								</select>
+								<label class="form__label" for="phone">Телефон</label>
+								<input class="form__input" id="phone" type="tel" placeholder="+7 (999) 999-99-99" required />
+								<label class="form__label" for="email">Электронная почта</label>
+								<input class="form__input" id="email" type="email" placeholder="Адрес электронной почты" required />
+								<div class="form__agreement">
+									<label class="form__label" for="agree">
+										Я&#160;согласен на&#160;обработку моих персональных данных в&#160;соответствии с&#160;Политикой конфиденциальности
+									</label>
+									<input class="form__input checkbox" id="agree" type="checkbox" required />
+								</div>
+								<button class="form__button" type="submit">Отправить</button>
+							</form>
+						</div>
+						<div class="footer__msg">
+							<picture>
+								<source srcset="./img/sent.webp 1x, ./img/sent@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/sent.jpg 1x, ./img/sent@2x.jpg 2x" type="image/jpeg" />
+								<img src="./img/sent.jpg" alt="send success" />
+							</picture>
+						</div>
+					</div>
+					<div class="footer__row">
+						<div class="footer__info">
+							<div class="footer__logo">
+								<a href="#!" class="logo__link">
+									<picture>
+										<source srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/logo.png 1x, ./img/logo@2x.png 2x" type="image/png" />
+										<img src="./img/logo.png" alt="Logo" />
+									</picture>
+								</a>
+							</div>
+							<div class="footer__contacts">
+								<span>+7&#160;495&#160;352-44-15</span>
+								<span>info@strategiya.ru</span>
+							</div>
+						</div>
+						<div class="footer__menu">
+							<div class="footer__menu-item"><a href="#top" class="nav__link">О&#160;нас</a></div>
+							<div class="footer__menu-item"><a href="#service" class="nav__link">Услуги</a></div>
+							<div class="footer__menu-item"><a href="#contacts" class="nav__link">Контакты</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./js/index.bundle.js"></script>
+		<script>
+			function validateForm(event) {
+				event.preventDefault();
+
+				const form = event.target;
+				const formElements = Array.from(form.elements);
+				let isValid = true;
+
+				formElements.forEach(element => {
+					if (element.required && !element.value) {
+						isValid = false;
+						element.classList.add("error");
+					} else {
+						element.classList.remove("error");
+					}
+
+					if (element.type === "email") {
+						const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+						if (element.value && !emailRegex.test(element.value)) {
+							isValid = false;
+							element.classList.add("error");
+						} else {
+							element.classList.remove("error");
+						}
+					}
+				});
+
+				if (isValid) {
+					form.submit();
+				}
+			}
+
+			const form = document.querySelector("form");
+			form.addEventListener("submit", validateForm);
+		</script>
+	</body>
+</html>

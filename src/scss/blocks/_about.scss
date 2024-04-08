@@ -1,0 +1,242 @@
+.about {
+
+    // .about__wrapper
+
+    &__wrapper {
+        height: 943px;
+        position: relative;
+        overflow: hidden;
+
+        @include mobile {
+            height: 1300px;
+        }
+
+    }
+
+    // .about__inner
+
+    &__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+        grid-template-rows: repeat(3, 310px);
+        grid-template-areas: 
+            "col1 col2"
+            "col1 col3"
+            "col1 col3";
+
+        @include mobile {
+            padding: 0 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 310px);
+            grid-template-areas: 
+            "col2"
+            "col1"
+            "col3"
+            "col3";
+        }
+    }
+
+    // .about__logo-box
+
+    &__logo-box {
+        grid-area: col1;
+        position: relative;
+
+        
+        
+    }
+    &__bg {
+        position: absolute;
+        top: -55px;
+        left: 0;
+        height: 117%;
+        width: 60%;
+
+        @include mobile {
+            top: -40px;
+            left: 0;
+            height: 65%;
+            min-width: 124%;
+        }
+    }
+
+    // .about__logo-wrapper
+
+    &__logo-wrapper {
+        position: relative;
+        right: 162px;
+        top: 48px;
+        width: clamp(240px, 25vw, 530px);;
+        height: clamp(240px, 25vw, 530px);;
+        margin-left: auto;
+
+        background-image: url('./../../img/about/logo.png');
+        background-position: 0px 3px; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+        @include mobile {
+            top: 26px;
+            left: 0;
+            right: 0;
+            margin-left: 0;
+
+            width: clamp(240px, 41vw, 250px);;
+            height: clamp(240px, 41vw, 250px);;
+
+        }
+    
+    }
+
+    // .about__desc
+
+    &__desc {
+        grid-area: col2;
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        
+    }
+
+    // .about__title
+
+    &__title {
+
+        padding-top: 90px;
+
+        font-weight: 600;
+        font-size: clamp(43px, 4.7vw, 70px);
+        text-transform: uppercase;
+
+        background: linear-gradient(233deg, #4caf50 0%, #3f51b5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+
+        @include mobile {
+            padding-top: 46px;
+            font-size: clamp(40px, 10vw, 70px);
+            text-align: center;
+        }
+
+    }
+
+
+
+    &__text {
+
+        padding-top: 20px;
+        max-width: 740px;
+
+        font-weight: 500;
+        font-size: 20px;
+
+        @include mobile {
+            padding-top: 0;
+        }
+        @include small-mobile {
+            font-size: 19px;
+        }
+    }
+
+    // .about__statistic
+
+    &__statistic {
+        grid-area: col3;
+    }
+}
+@keyframes move {
+    0% {
+        left: 0%;
+        bottom: 0%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        left: 90%;
+        bottom: 90%;
+        opacity: 0;
+    }
+}
+.triangle {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: clamp(25px, 3vw, 80px);
+    height: clamp(25px, 3vw, 80px);
+
+    animation: move 8s linear infinite;
+
+}
+.tr-1 {
+    animation-delay: 5s;
+
+}
+.tr-2 {
+    animation-delay: 3s;
+}
+.tr-3 {
+    animation-delay: 0s;
+}
+
+.parallax {
+
+    // .parallax__wrapper
+
+    &__wrapper {
+    }
+}
+.statistic {
+    padding-top: 38px;
+
+    @include mobile {
+        margin-left: 130px;
+    }
+    @media (max-width: 530px) {
+        margin-left: 0;
+    }
+
+    :nth-last-child(1) {
+        border-bottom: none;
+
+    }
+
+
+    &__row {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(233deg, #4caf50 0%, #3f51b5 100%);
+        border-image-slice: 1;
+        width: 100%;
+        height: 110px;
+    }
+    
+
+    &__title {
+        margin-bottom: -20px;
+        font-weight: 500;
+        font-size: 55px;
+        color: #3f51b5;
+
+        @include mobile {
+            font-size: 50px;
+        }
+    }
+
+    &__desc {
+        font-weight: 300;
+        font-size: 19px;
+        color: #404040;
+    }
+}

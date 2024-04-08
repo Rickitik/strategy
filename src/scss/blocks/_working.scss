@@ -1,0 +1,52 @@
+.working {
+
+    // .working__wrapper
+
+    &__wrapper {
+    }
+
+    // .working__inner
+
+    &__inner {
+    }
+
+    // .working__title
+
+    &__title {
+        padding-top: 45px;
+        padding-bottom: 15px;
+
+        @include mobile {
+            padding-top: 0;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 65px;
+            text-transform: uppercase;
+            background: linear-gradient(233deg, #4caf50 17%, #3f51b5 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+
+            @include mobile {
+                font-size: 50px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+
+    &__desc {
+        padding: 0 13px;
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #478b76;
+    }
+
+
+    &__swipper {
+    }
+}

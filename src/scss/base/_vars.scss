@@ -1,0 +1,35 @@
+:root {
+	--container-width: 1470px;
+	--container-padding: 35px;
+    --container-padding-mobile: 20px;
+
+	--font-main: 'Jost', sans-serif;
+	--font-accent: 'jsmath',  sans-serif;
+	--font-titles: var(--font-main);
+
+	--page-bg: #fff;
+	--text-color: #000;
+	--accent: #ac182c;
+	--link-color: #2578c8;
+    --blue: #3F51B5;
+    --green: #4CAF50;
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+    --small-size: 400px;
+
+    --swiper-pagination-bottom: 55px;
+    --swiper-pagination-color: #4CAF50;
+    --swiper-pagination-bullet-inactive-color: #D9D9D9;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    
+
+
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
